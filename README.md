@@ -270,22 +270,29 @@ Contrato de Carga de Solicitud de Póliza
 Endpoint: POST /api/policies
 Descripción: Permite a un concesionario cargar una nueva solicitud de póliza.
 Request Body:
+```json
 {
-"concesionarioId": "string",
-"data": {
-// Detalles de la solicitud de póliza
+  "concesionarioId": "string",
+  "data": {
+    // Detalles de la solicitud de póliza
+  }
 }
-}
+```
 Response:
 201 Created
+```json
 {
-"message": "Policy request submitted",
-"requestId": "string"
+  "message": "Policy request submitted",
+  "requestId": "string"
 }
+```
 400 Bad Request
+```json
 {
-"message": "Validation error"
+  "message": "Validation error"
 }
+```
+
 ### Contrato de Revisión de Solicitudes de Póliza
 
 Endpoint: GET /api/policies
